@@ -344,6 +344,15 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
+      设置主题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
       注意事项
     </span>
   </a>
@@ -450,6 +459,15 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
+      设置主题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
       注意事项
     </span>
   </a>
@@ -521,7 +539,14 @@ mkdocs gh-deploy
 <li><strong>访问</strong>: 站点可通过 <code>https://username.github.io/repository/</code> 访问。</li>
 <li><strong>更新</strong>: 修改内容后，再次运行 <code>mkdocs gh-deploy</code> 更新站点。</li>
 </ul>
-<h2 id="_4">注意事项</h2>
+<h2 id="_4">设置主题</h2>
+<p>url:https://github.com/squidfunk/mkdocs-material</p>
+<pre><code>pip install mkdocs-material
+# 然后在mkdocs.yml 添加下面的内容
+theme:
+  name: material
+</code></pre>
+<h2 id="_5">注意事项</h2>
 <ul>
 <li><code>.gitignore</code> 中应包含 <code>site/</code> 目录，避免提交生成的站点文件。</li>
 <li>修改 MkDocs 配置前请先本地测试，确保无误后再部署。</li>
